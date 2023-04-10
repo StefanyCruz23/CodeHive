@@ -1,0 +1,180 @@
+
+/* Estilos Generales */
+
+    /* Colores*/
+
+    .verde{
+        color: #39A388;
+    }
+
+    .naranja {
+        color: #F26C23;
+    }
+
+    .gris {
+        color: #EFEFEF;
+    }
+
+    .blanco {
+        color: #ffffff;
+    }
+
+    .negro {
+        color: #000000;
+    }
+
+
+/* Estilos Generales (Pantallas más grandes de 1024) */
+ 
+    /* Estilos Titulos */
+
+    h1 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 15px;
+     }
+  
+    h2 {
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    h4 {
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    h5 {
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    h6 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    /* Estilos Texto */
+
+    p{
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .pequeña {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+
+
+/* Media queries (Pantallas inferiores de 768) */
+
+
+    @media screen and (max-width: 768px) and (min-width: 320px){  
+        
+        /* Estilos Titulos */
+
+        h1 {
+        font-size: 34px;
+      }
+      
+      h2 {
+        font-size: 30px;
+      }
+      
+      h3 {
+        font-size: 26px;
+      }
+      
+      h4 {
+        font-size: 20px;
+      }
+      
+      h5 {
+        font-size: 17px;
+      }
+      
+      h6 {
+        font-size: 15px;
+      }
+      
+     /* Estilos Texto */
+    
+      p{
+        font-size: 14px;
+      }
+    
+      .pequeña {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+        /* Estilos Titulos */
+
+        h1 {
+            font-size: 30px;
+          }
+          
+          h2 {
+            font-size: 25px;
+          }
+          
+          h3 {
+            font-size: 20px;
+          }
+          
+          h4 {
+            font-size: 16px;
+          }
+          
+          h5 {
+            font-size: 15px;
+          }
+          
+          h6 {
+            font-size: 13px;
+          }
+          
+         /* Estilos Texto */
+        
+          p{
+            font-size: 12px;
+          }
+        
+          .pequeña {
+            font-size: 10px;
+          }
+    }
