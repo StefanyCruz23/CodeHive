@@ -1,0 +1,425 @@
+
+/*---------------- RESETEO ---------------- */ 
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+/*---------------- INICIO ---------------- */ 
+
+
+    /* --SECCIÓN-1-- */    
+
+        .texto-seccion1 {
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagen-seccion1  {
+            width: 24rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .seccion1 {
+            background-image: url(../img/Fondo_Seccion1_Home.jpg);
+            background-size: cover;
+            display: flex;
+        }
+
+        .columna1-seccion1 {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .columna2-seccion1 {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Media queries (Pantallas inferiores) */
+
+        @media screen and (max-width: 950px) { 
+
+            .texto-seccion1 {
+                text-align: center;
+            }
+            .seccion1 {
+                flex-direction: column;
+            }
+
+            .columna1-seccion1, .columna2-seccion1 {
+                width: 100%;
+            }
+            
+            .columna1-seccion1 {
+                order: 1;
+            
+            }
+            
+            .columna2-seccion1 {
+                order: 2;
+            }
+        }
+        @media screen and (max-width: 950px) and (min-width: 540px) {
+            .imagen-seccion1 {
+                width: 18rem;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .imagen-seccion1 {
+                width: 14rem;
+            }
+        }
+    
+
+    /* --SECCIÓN-2-- */ 
+
+        .texto-seccion2 {
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagen-seccion2 {
+            width: 24rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .seccion2 {
+            background-image: url(../img/Fondo_Seccion_2-4_Home.jpg);
+            background-size: cover;
+            display: flex;
+        }
+
+        .columna1-seccion2 {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .columna2-seccion2 {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Media queries (Pantallas inferiores) */
+
+        @media screen and (max-width: 950px) { 
+
+            .texto-seccion2 {
+                text-align: center;
+            }
+            .seccion2 {
+                flex-direction: column;
+            }
+
+            .columna1-seccion2, .columna2-seccion2 {
+                width: 100%;
+            }
+            
+            .columna1-seccion2 {
+                order: 1;
+            
+            }
+            
+            .columna2-seccion2 {
+                order: 2;
+            }
+        }
+
+        @media screen and (max-width: 950px) and (min-width: 540px) {
+            .imagen-seccion2 {
+                width: 18rem;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .imagen-seccion2 {
+                width: 14rem;
+            }
+        }
+
+
+    /* --SECCIÓN-3-- */ 
+
+        .container-recursos{
+            flex-direction: column;
+        }
+
+        .texto-seccion3 {
+            text-align: center;
+            margin: 0 0 3rem 0;
+        }
+
+        .seccion3 {
+            background-color: #EFEFEF;
+        }
+
+        .grid-seccion3 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 10px;
+            }
+
+            /*generales Grid Recursos */ 
+
+                .grid1-seccion3, .grid2-seccion3, .grid3-seccion3, .grid4-seccion3 { 
+                    width: 100%; 
+                    display: flex; 
+                    flex-direction: column; 
+                    justify-content: center; 
+                    align-items: center;  
+                }  
+
+                .texto-recursos1, .texto-recursos2, .texto-recursos3, .texto-recursos4 { 
+                    text-align: center;
+                } 
+
+                .img-recursos1, .img-recursos2, .img-recursos3, .img-recursos4 { 
+                    width: 250px;
+                    border-radius: 15px; 
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center; 
+                    margin: 0 0 1rem 0;
+                }
+
+
+        /* Media queries (Pantallas inferiores) */
+            
+            @media screen and (max-width: 1100px) {
+                .grid-seccion3 {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 30px;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                .grid-seccion3 {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                }
+            }
+
+            @media screen and (max-width: 320px) {
+                .grid-seccion3 {
+                    margin: auto;
+                }
+            }
+
+
+    /* --SECCIÓN-4-- */ 
+
+        .texto-seccion4 {
+            color: #ffffff;
+            text-align: center;
+            margin: 0 0 3rem 0;
+        }
+
+        .seccion4 {
+            background-image: url(../img/Fondo_Seccion_2-4_Home.jpg);
+            background-size: cover;
+        }
+
+        .grid-seccion4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            justify-content: center;        
+            align-items: center;
+        }
+
+            /*generales Grid Artículos*/ 
+
+                .grid1-seccion3, .grid2-seccion3, .grid3-seccion3, { 
+                    width: 100%; 
+                    display: flex; 
+                    flex-direction: column; 
+                    justify-content: center; 
+                    align-items: center;  
+                }  
+
+                .texto-articulo1, .texto-articulo2, .texto-articulo3 {
+                    color: #ffffff;
+                    text-align: center;
+                    margin: 0 0 1rem 0;
+                }
+
+            .button-articulos {
+                display: flex;        
+                justify-content: center;        
+                align-items: center;
+            }
+
+
+        /* Media queries (Pantallas inferiores) */
+            
+            @media screen and (min-width: 801px) {
+                .grid-seccion4 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                }
+            }
+           
+            @media screen and (max-width: 800px) {
+                .grid-seccion4 {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-template-rows: repeat(3, 1fr);
+                  grid-gap: 10px;
+                }
+            }
+
+
+    /* --SECCIÓN-5-- */ 
+
+        .seccion5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .container-form-inscripcion {
+            flex-direction: row;
+        }
+
+        .texto-seccion5 {
+            text-align: center;
+        }
+
+        .imagen-seccion5 {
+            width: 24rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        /* --formulario-- */ 
+
+           /* Estilos para el contenedor del formulario */
+                .form-home {
+                    background-color: #EFEFEF;
+                    border-radius: 15px;
+                    padding: 2rem;
+                    margin: 2rem 0;
+                }
+                
+                /* Estilos para las etiquetas del formulario */
+                .form-home label {
+                    color: #5a5a5a;
+                    font-weight: bold;
+                }
+                
+                /* Estilos para los campos de entrada */
+                .form-home input[type="text"],
+                .form-home input[type="email"],
+                .form-home select {
+                    background-color: #ffffff;
+                    border: none;
+                    border-radius: 15px;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    color: #5a5a5a;
+                }
+                
+                /* Estilos adicionales */
+                .form-home select {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M2 0l4 4-4 4z"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position: right 10px top 50%;
+                    background-size: 8px auto;
+                    margin:0 0 2rem 0;
+                }
+
+        /* Media queries (Pantallas inferiores) */
+
+            @media screen and (max-width: 950px) and (min-width: 540px) {
+                .imagen-seccion5 {
+                    width: 18rem;
+                }
+            }
+        
+            @media screen and (max-width: 540px) {
+                .imagen-seccion5 {
+                    width: 14rem;
+                }
+            }
+
+
+    /* --SECCIÓN-6-- */ 
+
+        .seccion6 {
+            background-image: url(../img/Fondo_seccion6_Home.jpg);
+            background-size: cover;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 4rem;; 
+        }
+
+        .texto-seccion6 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .texto-seccion6 h4 {
+            margin: 0 0 1rem 0;
+        }
+
+        .container-sesion6 {
+            background-color: #ffffff;
+            border-radius: 50px;
+            position: relative;
+            flex: 1;
+            max-width: 100%;
+            transition-duration: inherit;
+            margin-top: 0;
+            margin-bottom: 50px 0;
+            padding: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 4rem;;
+        }
+
+        .buttons-seccion6 {
+            margin: 2rem 0 0 0;
+        }
+
+        /* Media queries (Pantallas inferiores) */
+
+            @media screen and (max-width: 950px) and (min-width: 540px) {
+                .seccion6 {
+                    padding: 2rem 2rem;; 
+                }
+            }
+        
+            @media screen and (max-width: 540px) {
+                .seccion6 {
+                    padding: 2rem 1rem;; 
+                }
+            }

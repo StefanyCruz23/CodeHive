@@ -1,0 +1,71 @@
+/*---------------- RESETEO ---------------- */ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------- BLOG ---------------- */ 
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+.seccion1-blog {
+    background-image: url(../img/Fondo_Seccion1_Home.jpg);
+            background-size: cover;
+            display: flex;
+            
+}
+
+.texto-seccion1-blog {
+    color: #ffffff;
+            justify-content: center;
+            align-items: center;
+}
+
+.seccion2-blog {
+    background-image: url(../img//Fondo_Seccion_2-4_Home.jpg);
+            background-size: cover;
+            display: flex;
+            margin: 0 0 2rem 0;
+}
+
+.columna1-seccion2-blog {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna2-seccion2-blog {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-seccion2-blog {
+    width: 24rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 950px) and (min-width: 540px) {
+    .imagen-seccion2-blog {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .imagen-seccion2-blog {
+        width: 14rem;
+    }
+} 
