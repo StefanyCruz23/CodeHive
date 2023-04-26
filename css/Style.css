@@ -21,7 +21,6 @@
             flex-direction: row;
             display: flex;
             justify-content: center;
-            align-items: center;
             box-sizing: border-box;
             padding: 3rem 4rem;
             margin: auto;
@@ -136,6 +135,14 @@
     /* --FOOTER-- */
 
         /* --FOOTER-1-- */
+            .footer {
+                background-color: #3F8C76;
+                color: #ffffff;
+                padding: 1rem 0 0 0;
+                justify-content: center;
+                text-align: center;
+            }
+            
             .imagen-f1 {
                 width: 100px;
             }
@@ -168,13 +175,6 @@
                 margin-bottom: 10px;
             }
 
-            .footer {
-                background-color: #3F8C76;
-                color: #ffffff;
-                padding: 1rem 0 0 0;
-                justify-content: center;
-                text-align: center;
-            }
 
             .footer1 {
                 display: flex;
