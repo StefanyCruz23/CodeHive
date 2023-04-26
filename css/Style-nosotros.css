@@ -7,3 +7,289 @@
 }
 
 /*---------------- NOSOTROS ---------------- */ 
+
+    /* --SECCIÓN-1-Nosotros-- */    
+
+    .texto-seccion1-nosotros {
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagen-seccion1-nosotros  {
+        width: 24rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion1-nosotros {
+        background-image: url(../img/Fondo_Seccion1_Nosotros.jpg);
+        background-size: cover;
+        display: flex;
+    }
+
+    .columna1-seccion1-nosotros {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .columna2-seccion1-nosotros {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Media queries (Pantallas inferiores) */
+
+    @media screen and (max-width: 950px) { 
+
+        .texto-seccion1-nosotros {
+            text-align: center;
+        }
+        .seccion1-nosotros {
+            flex-direction: column;
+        }
+
+        .columna1-seccion1-nosotros, .columna2-seccion1-nosotros {
+            width: 100%;
+        }
+        
+        .columna1-seccion1-nosotros{
+            order: 1;
+        
+        }
+        
+        .columna2-seccion1-nosotros {
+            order: 2;
+        }
+        }
+        @media screen and (max-width: 950px) and (min-width: 540px) {
+            .imagen-seccion1-nosotros {
+                width: 18rem;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .imagen-seccion1-nosotros {
+                width: 14rem;
+            }
+        } 
+
+        /* --SECCIÓN-2 nosotros-- */ 
+
+        .seccion2-nosotros {
+            background-image: url(../img/Fondo_Seccion_2-4_Home.jpg);
+            background-size: cover;
+            display: flex;
+            display: grid;
+            padding:0 0 2rem 0;
+            margin: 0;
+        }
+        .texto-seccion2-nosotros {
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+
+            .container-equipo {
+                flex-direction: column;
+            }
+    
+            .grid-equipo {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                grid-gap: 10px;
+                }
+    
+                /*generales Grid Recursos */ 
+    
+                    .grid1-equipo, .grid2-equipo { 
+                        width: 100%; 
+                        display: flex; 
+                        flex-direction: column; 
+                        justify-content: center; 
+                        align-items: center;  
+                    }  
+    
+                    .texto-equipo { 
+                        color: #ffffff;
+                        text-align: center;
+                    } 
+    
+                    .img-equipo { 
+                        width: 250px;
+                        border-radius: 15px; 
+                        display: flex; 
+                        justify-content: center; 
+                        align-items: center; 
+                        margin: 0 0 1rem 0;
+                    }
+    
+    
+            /* Media queries (Pantallas inferiores) */
+                
+                @media screen and (max-width: 875px) {
+                    .grid-equipo {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-gap: 30px;
+                    }
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .grid-equipo {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    }
+                }
+    
+                @media screen and (max-width: 320px) {
+                    .grid-equipo {
+                        margin: auto;
+                    }
+                }
+
+            .container-equipo1 {
+                flex-direction: column;
+            }
+    
+            .grid-equipo1 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                grid-gap: 10px;
+                }
+    
+                /*generales Grid Recursos */ 
+    
+                    .grid1-equipo, .grid2-equipo, .grid3-equipo { 
+                        width: 100%; 
+                        display: flex; 
+                        flex-direction: column; 
+                        justify-content: center; 
+                        align-items: center;  
+                    }  
+    
+    
+            /* Media queries (Pantallas inferiores) */
+                
+                @media screen and (max-width: 875px) {
+                    .grid-equipo1 {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-gap: 30px;
+                    }
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .grid-equipo1 {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    }
+                }
+    
+                @media screen and (max-width: 320px) {
+                    .grid-equipo1 {
+                        margin: auto;
+                    }
+                }
+    
+
+        /* --SECCIÓN-3-Nosotros-- */    
+
+        .container-margen-nosotros {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+    .texto-seccion3-nosotros {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .imagen-seccion3-nosotros  {
+        width: 24rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion3-nosotros {
+        background-image: url(../img/Fondo_Seccion3_Nosotros.jpg);
+        background-size: cover;
+        display: flex;
+    }
+
+    .columna1-seccion3-nosotros {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .columna2-seccion3-nosotros {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Media queries (Pantallas inferiores) */
+
+    @media screen and (max-width: 950px) { 
+
+        .seccion3-nosotros {
+            flex-direction: column;
+        }
+
+        .columna1-seccion3-nosotros, .columna2-seccion3-nosotros {
+            width: 100%;
+        }
+        
+        .columna1-seccion3-nosotros{
+            order: 1;
+        
+        }
+        
+        .columna2-seccion3-nosotros {
+            order: 2;
+        }
+        }
+        @media screen and (max-width: 950px) and (min-width: 540px) {
+            .imagen-seccion3-nosotros {
+                width: 18rem;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .imagen-seccion3-nosotros {
+                width: 14rem;
+            }
+        } 
+
+        /* Sección 4 nosotros*/
+
+        .seccion4-nosotros {
+            background-image: url(../img/Fondo_Seccion4_Nosotros.jpg);
+            background-size: cover;
+            display: flex;
+            padding: 3rem 0;
+                    
+        }
+
+        .texto-seccion4-nosotros {
+            color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
