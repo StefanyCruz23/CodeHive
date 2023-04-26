@@ -21,8 +21,9 @@
 
         .seccion1-blog {
             background-image: url(../img/Fondo_Seccion1_Home.jpg);
-                    background-size: cover;
-                    display: flex;
+            background-size: cover;
+            display: flex;
+            padding: 3rem 0;
                     
         }
 
@@ -106,6 +107,7 @@
                 width: 14rem;
             }
         }
+
     /* Sección 3 */
         .continuar-leyendo a {
             color: #39A388;

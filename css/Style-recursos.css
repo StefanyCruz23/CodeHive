@@ -7,3 +7,207 @@
 }
 
 /*---------------- RECURSOS---------------- */ 
+
+    /* Sección 1 */
+
+    .seccion1-blog {
+        background-image: url(../img/Fondo_Seccion1_Recursos.jpg);
+        background-size: cover;
+        display: flex;
+        padding: 3rem 0;
+    }
+
+    .texto-seccion1-blog {
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+/* Sección 2 */
+
+    .texto-seccion2 {
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-seccion2 {
+        width: 24rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion2 {
+        background-image: url(../img/Fondo_Seccion_2-4_Home.jpg);
+        background-size: cover;
+        display: flex;
+    }
+
+    .columna1-seccion2 {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .columna2-seccion2 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Media queries (Pantallas inferiores) */
+
+    @media screen and (max-width: 950px) { 
+
+        .texto-seccion2 {
+            text-align: center;
+        }
+
+        .columna1-seccion2, .columna2-seccion2 {
+            width: 100%;
+        }
+        
+        .columna1-seccion2 {
+            order: 1;
+        
+        }
+        
+        .columna2-seccion2 {
+            order: 2;
+        }
+    }
+
+    @media screen and (max-width: 950px) and (min-width: 540px) {
+        .imagen-seccion2 {
+            width: 18rem;
+        }
+    }
+    @media screen and (max-width: 540px) {  
+        .imagen-seccion2 {
+            width: 14rem;
+        }
+    } 
+
+   
+
+    /* Sección 3 */
+
+    /* Sección 3 (1-3) */
+
+    
+    .pading-columna {
+        padding: 3rem;
+    }
+    
+    .icon_Gear-fill, .icon_File-code-fill, .icon_Book-fill, .icon_People-fill {
+        color: #39A388;
+        font-size: 3rem;
+        display: block; /* asegura que se centren correctamente */
+        margin: auto; /* centra horizontalmente */
+        text-align: center;
+        padding: 0 0 1rem 0;
+    }
+    
+    .fondo-seccion3-2 {
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(..//img/Fondo_Seccion3.2_Recursos.jpg);
+        background-size: cover;
+        display: flex;
+        height: 100%; 
+        overflow: hidden; 
+    }
+
+    .fondo-seccion3-1 {
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(..//img/Fondo_Seccion3.1_Recursos.jpg);
+        background-size: cover;
+        display: flex;
+        height: 100%; 
+        overflow: hidden; 
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    
+    @media (min-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .grid-item {
+        text-align: center;
+    }
+    
+    .first, .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen {
+        width: 100%;
+        height: auto;
+        max-height: 24rem;
+        object-fit: cover;
+    }
+    
+    @media (max-width: 894px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+        
+    }
+       
+    /* Sección 3 (2-4) */
+
+    
+    @media (min-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .grid-item {
+        text-align: center;
+    }
+    
+    .third, .fourth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagen {
+        width: 100%;
+        height: auto;
+        max-height: 24rem;
+        object-fit: cover;
+    }
+    
+    @media (max-width: 894px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+        .grid-item.third {
+            order: 2;
+          }
+        .grid-item.fourth {
+            order: 1;
+          }
+    }
+
+
