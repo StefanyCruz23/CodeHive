@@ -388,6 +388,7 @@
         }
 
         .texto-seccion6 h4 {
+            padding: 1rem;
             margin: 0 0 1rem 0;
         }
 
@@ -400,14 +401,14 @@
             transition-duration: inherit;
             margin-top: 0;
             margin-bottom: 50px 0;
-            padding: 50px;
+            padding: 1rem 2rem;
             justify-content: center;
             align-items: center;
-            margin: 3rem 4rem;;
+            margin: 3rem 4rem;
         }
 
         .buttons-seccion6 {
-            margin: 2rem 0 0 0;
+            margin: 2rem 0 ;
         }
 
         /* Media queries (Pantallas inferiores) */
@@ -421,5 +422,8 @@
             @media screen and (max-width: 540px) {
                 .seccion6 {
                     padding: 2rem 1rem;; 
+                }
+                .container-sesion6 {
+                    margin: 0;
                 }
             }
