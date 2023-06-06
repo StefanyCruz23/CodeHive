@@ -9,6 +9,56 @@
 
 /*---------------- INICIO ---------------- */ 
 
+    /* --VENTANA MODAL-- */  
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      
+      .modal-content {
+        background-color: #fff;
+        margin: 20% auto;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 400px;
+        text-align: center;
+      }
+      
+      .close {
+        color: #39A388;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #3F8C76;
+        cursor: pointer;
+      }
+      
+      #closeModalBtn {
+        background-color: #39A388;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      #closeModalBtn:hover {
+        background-color: #3F8C76;
+      }
+      
+      
+
 
     /* --SECCIÓN-1-- */    
 
