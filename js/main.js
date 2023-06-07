@@ -19,3 +19,23 @@ const leerDatos = () => {
   console.log('Estos son los datos:')
   console.log(showConsole)
 }
+
+//VENTANA MODAL
+
+// Obtener la referencia a la ventana modal, al botón de cierre y al ícono de cierre
+const modal = document.getElementById('modal');
+const closeModalButton = document.getElementById('closeModalBtn');
+const closeIcon = document.querySelector('.close');
+
+// Mostrar la ventana modal al cargar la página
+window.addEventListener('load', function() {
+  modal.style.display = 'block';
+});
+
+// Cerrar la ventana modal al hacer clic en el botón de cierre o el ícono de cierre
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+closeModalButton.addEventListener('click', closeModal);
+closeIcon.addEventListener('click', closeModal);
