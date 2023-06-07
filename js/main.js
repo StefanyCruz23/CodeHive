@@ -1,21 +1,21 @@
-// Obtener elementos del DOM
-var modal = document.getElementById("modal");
-var closeModalBtn = document.getElementById("closeModalBtn");
-var closeSpan = document.getElementsByClassName("close")[0];
+// FORMULARIO
 
-// Cerrar la ventana modal al hacer clic en el botón "Cerrar"
-closeModalBtn.onclick = function() {
-  modal.style.display = "none";
-}
+const leerDatos = () => {
+  let nombre = document.getElementById('nombre').value
+  let correo = document.getElementById('correo').value
+  let tema = document.getElementById('tema').value
 
-// Cerrar la ventana modal al hacer clic en el botón "X"
-closeSpan.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Cerrar la ventana modal al hacer clic fuera de ella
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  const datos = {
+      nombre: nombre,
+      correo: correo,
+      tema: tema
   }
+
+  // Aquí se guarda, se debe usar JSON.stringify porque en localStorage se almacena como texto
+  localStorage.setItem('datos', JSON.stringify(datos))
+
+  // Cuando se leen, se pasan nuevamente a JSON con JSON.parse
+  const showConsole = JSON.parse(localStorage.getItem('datos'))
+  console.log('Estos son los datos:')
+  console.log(showConsole)
 }

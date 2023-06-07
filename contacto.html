@@ -109,20 +109,17 @@
                     </div>
                     <div class="grid-seccion3-contacto">
                         <div class="grid1-seccion3-contacto">
-                            <div class="form-contacto">
-                                <label for="name">Nombre:</label>
-                                <input type="text" id="name" name="name" placeholder="Ingresa nombre y apellido">
-                            
-                                <label for="email">Correo electrónico:</label>
-                                <input type="email" id="email" name="email" placeholder="Ingresa un correo válido">
-                            
-                                <label for="message">Mensaje:</label>
-                                <textarea type="mensaje" id="message" name="message">Deja tu mensaje
-                                </textarea>
-                            
-                                <div class="button-enviar-form">
-                                    <a href="#" class="button">Enviar</a>
-                                </div>
+                            <div class="form">
+                                <label for="nombre">Nombre:</label>
+                                <input type="nombre" id="nombre"  placeholder="Ingresa nombre y apellido" class="input-field">
+                                <br>
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="correo" id="correo" placeholder="Ingresa un correo válido" class="input-field">
+                                <br>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Deja tu mensaje"></textarea>
+                                <br>
+                                <button type="submit" onclick="leerDatos()">Enviar</button>
                             </div>
                         </div>
                         <div class="grid2-seccion3-contacto">
@@ -172,5 +169,8 @@
                 <p><span class="pequeña"> Copyright © 2023 CODEHIVE</span></p>
             </div>
         </section>
+
+        <!--archivos JS-->
+        <script src="../CodeHive/js/contacto.js"></script>
     </body>
 </html>

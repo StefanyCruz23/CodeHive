@@ -347,4 +347,170 @@
             text-align:center;
           }
         } 
+
+/* --Nuestro foro-- */ 
+.nombres {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.fondo-form {
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin: 2rem;
+    width: 100%;
+  }
+  .fondo-foro{
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin: 2rem;
+    width: 100%;
+  }
+  
+  .pregunta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* Ajusta el espaciado entre la imagen y el nombre */
+  }
+  
+
+  .respuesta {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 2rem 0 4rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar2 {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    align-self: flex-start;
+  }
+  
+  .comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  
+  .comentario p {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 767px) {
+    .nombres {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .fondo-foro {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0 0 2rem 0;
+      }
+      
+      .fondo-form {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+      }
+
+      .comentario p {
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .pregunta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .avatar {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-self: center;
+      }
+
+    .respuesta {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem;
+    }
+  
+    .avatar2 {
+      margin-right: 0;
+      margin-bottom: 10px;
+      align-self: center;
+    }
+
+    
+  }
+  
+  
+  
    
+/* --formulario-- */ 
+.form {
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+    width: 100%;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+    font-weight: medium;
+  }
+  
+  .input-field,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    color: #5a5a5a;
+  }
+  
+  button {
+    background-color: #39A388;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3F8C76;
+  }

@@ -184,28 +184,48 @@
                     }  
 
                 /* --formulario-- */ 
-
-                    .form-contacto {
-                        padding: 20px;
-                    }
-                    
-                    .form-contacto label {
-                        color: #ffffff;
-                    }
-
-                    
-                    .form-contacto input[type="text"],
-                    .form-contacto input[type="email"],
-                    .form-contacto textarea {
-                        width: 100%;
-                        padding: 10px;
-                        font-family: 'Montserrat', sans-serif;
-                        margin-bottom: 20px;
-                        border: none;
-                        border-radius: 15px;
-                        background-color: #fff;
-                        color: #5a5a5a;
-                    }
+                .form {
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    border-radius: 15px;
+                    padding: 2rem;
+                    margin: 2rem;
+                    width: 100%;
+                  }
+                  
+                  .form label {
+                    display: block;
+                    margin-bottom: 10px;
+                    color: #ffffff;
+                    font-weight: medium;
+                  }
+                  
+                  .input-field,
+                  textarea {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    background-color: #ffffff;
+                    border: none;
+                    border-radius: 15px;
+                    color: #5a5a5a;
+                  }
+                  
+                  button {
+                    background-color: #39A388;
+                    color: #ffffff;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    border: none;
+                    cursor: pointer;
+                  }
+                  
+                  button:hover {
+                    background-color: #3F8C76;
+                  }
+                  
                   
 
                 /* Columna 2 Grid Recursos */ 

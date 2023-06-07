@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider</title>
+  <title>CodeHive Foro de discusión</title>
 
   <link href="../CodeHive/css/Style.css" rel="stylesheet">
   <link href="../CodeHive/css/Texto.css" rel="stylesheet">
@@ -14,6 +14,9 @@
 <!--Icono-->
 <link rel="icon" href="img/Icono-CodeHive.ico"/>
 </head>
+
+<!--archivos JS-->
+<script src="../CodeHive/js/foro.js" defer></script>
 
 <body>
   <!--header-->
@@ -122,10 +125,76 @@ Nuestro propio foro comunitario es el lugar ideal para compartir tus experiencia
       </div>
 
       <h5 id="nuestro-foro">Nuestro foro</h5>
-      <div class="embebidos">
-        <iframe src="https://codehive.foroactivo.com/t2-desarrollo-frontend#3" width="100%" height="600px"></iframe>
+      <div class="fondo-foro">
+        <div class="pregunta">
+          <img src="../CodeHive/img/IngridSastoque.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+          <div class="nombres">
+            <div id="nombre1"></div>
+          </div>
+            <p>¿Cuáles son las mejores prácticas para optimizar el rendimiento de una página web en términos de carga y velocidad?</p>
+          </div>
+        </div>
+        <div class="respuesta">
+          <img src="../CodeHive/img/CarolinaCarrillo.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+            <div class="nombres">
+              <div id="nombre2"></div>
+            </div>
+            <p>La principal diferencia entre CSS Grid y CSS Flexbox radica en su enfoque de diseño. CSS Grid se basa en una cuadrícula bidimensional de filas y columnas, lo que lo hace adecuado para diseños más complejos y estructuras de página. Por otro lado, CSS Flexbox se enfoca en el diseño unidimensional, perfecto para organizar elementos en una única dirección, ya sea horizontal o verticalmente.</p>
+          </div>
+        </div>
+        <div class="respuesta">
+          <img src="../CodeHive/img/MarielysHerrera.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+            <div class="nombres">
+              <div id="nombre3"></div>
+            </div>
+            <p>CSS Grid es ideal cuando se necesita un control preciso sobre el diseño en una cuadrícula bidimensional. Es especialmente útil para diseños complejos y estructuras de página más grandes. Por otro lado, CSS Flexbox es excelente para organizar elementos en una única dirección, ya sea horizontal o verticalmente. Es perfecto para diseños más simples y componentes flexibles. La elección entre Grid y Flexbox depende del diseño específico y las necesidades del proyecto.</p>
+          </div>
+        </div>
       </div>
-
+      <div class="fondo-foro">
+        <div class="pregunta">
+          <img src="../CodeHive/img/StefanyCruz.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+            <div class="nombres">
+              <div id="nombre4"></div>
+            </div>
+            <p>¿Cuáles son las técnicas más efectivas para lograr un diseño web responsivo y adaptable a diferentes dispositivos?</p>
+          </div>
+        </div>
+        <div class="respuesta">
+          <img src="../CodeHive/img/NadiaNievas.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+            <div class="nombres">
+              <div id="nombre5"></div>
+            </div>
+            <p>Las técnicas más efectivas para lograr un diseño web responsivo y adaptable a diferentes dispositivos incluyen el uso de CSS Media Queries para aplicar estilos según el tamaño de la pantalla, el diseño fluido con unidades de medida relativas, el uso de imágenes adaptativas, la priorización de contenido y las pruebas continuas en diferentes dispositivos para garantizar una experiencia óptima en todos ellos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fondo-foro">
+        <div class="pregunta">
+          <img src="../CodeHive/img/Avatar.jpg" alt="Avatar2" class="avatar2">
+          <div class="comentario">
+            <div class="nombres">
+              <div id="nombre6"></div>
+            </div>
+            <p>¿Cuáles son las técnicas más efectivas para lograr un diseño web responsivo y adaptable a diferentes dispositivos?</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="fondo-form">
+        <label for="nombre">Nombre:</label>
+        <input type="nombre" id="nombre"  placeholder="Ingresa nombre y apellido" class="input-field">
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Deja tu mensaje"></textarea>
+        <br>
+        <button type="submit" onclick="leerDatos()">Enviar</button>
+    </div>
     </div>
         
   </div>
@@ -185,5 +254,6 @@ Nuestro propio foro comunitario es el lugar ideal para compartir tus experiencia
       <p><span class="pequeña"> Copyright © 2023 CODEHIVE</span></p>
   </div>
 </section>
+
 </body>
 </html>

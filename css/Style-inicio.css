@@ -10,56 +10,7 @@
 /*---------------- INICIO ---------------- */ 
 
     /* --VENTANA MODAL-- */  
-    .modal {
-        display: block;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      
-      .modal-content {
-        background-color: #fff;
-        margin: 20% auto;
-        padding: 20px;
-        border-radius: 5px;
-        max-width: 400px;
-        text-align: center;
-      }
-      
-      .close {
-        color: #39A388;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: #3F8C76;
-        cursor: pointer;
-      }
-      
-      #closeModalBtn {
-        background-color: #39A388;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 15px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      #closeModalBtn:hover {
-        background-color: #3F8C76;
-      }
-      
-      
-
-
+    
     /* --SECCIÓN-1-- */    
 
         .texto-seccion1 {
@@ -300,7 +251,7 @@
 
             /*generales Grid Artículos*/ 
 
-                .grid1-seccion3, .grid2-seccion3, .grid3-seccion3, { 
+                .grid1-seccion3, .grid2-seccion3, .grid3-seccion3 { 
                     width: 100%; 
                     display: flex; 
                     flex-direction: column; 
@@ -357,7 +308,7 @@
             text-align: center;
         }
 
-        .imagen-seccion5 {
+        .imagen-seccion5  {
             width: 24rem;
             overflow: hidden;
             display: flex;
@@ -367,44 +318,57 @@
         }
 
         /* --formulario-- */ 
-
-           /* Estilos para el contenedor del formulario */
-                .form-home {
-                    background-color: #EFEFEF;
-                    border-radius: 15px;
-                    padding: 2rem;
-                    margin: 2rem 0;
-                }
-                
-                /* Estilos para las etiquetas del formulario */
-                .form-home label {
-                    color: #5a5a5a;
-                    font-weight: bold;
-                }
-                
-                /* Estilos para los campos de entrada */
-                .form-home input[type="text"],
-                .form-home input[type="email"],
-                .form-home select {
-                    background-color: #ffffff;
-                    border: none;
-                    border-radius: 15px;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    width: 100%;
-                    color: #5a5a5a;
-                }
-                
-                /* Estilos adicionales */
-                .form-home select {
-                    appearance: none;
-                    -webkit-appearance: none;
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M2 0l4 4-4 4z"/></svg>');
-                    background-repeat: no-repeat;
-                    background-position: right 10px top 50%;
-                    background-size: 8px auto;
-                    margin:0 0 2rem 0;
-                }
+        .form {
+            justify-content: center;
+            align-items: center;
+            background-color: #EFEFEF;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem;
+        }
+        
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #5a5a5a;
+            font-weight: bold;
+        }
+        
+        /* Estilos para los campos de entrada */
+        .select-wrapper input[type="nombre"] {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            color: #5a5a5a;
+            margin: 0;
+        }
+        
+        .input-field {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            color: #5a5a5a;
+        }
+        
+        button {
+            background-color: #39A388;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #3F8C76;
+        }
 
         /* Media queries (Pantallas inferiores) */
 
