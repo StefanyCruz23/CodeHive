@@ -1,5 +1,4 @@
-
- [
+const Recursos = [
   {
     Nombre: "GitHub",
     categoria: "Herramientas de interacción"
@@ -8,6 +7,7 @@
     Nombre: "JSFiddle",
     categoria: "Herramientas de interacción"
   },
+  
   {
     Nombre: "CodeSandbox",
     categoria: "Herramientas de interacción"
@@ -140,4 +140,3 @@
 
 const jsonRecursos = JSON.parse(JSON.stringify(Recursos));
 console.log(jsonRecursos);
-
