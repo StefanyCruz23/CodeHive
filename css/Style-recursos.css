@@ -349,7 +349,7 @@
           }
         } 
 
-/* --Nuestro foro-- */ 
+/* --NUESTRO FORO-- */ 
 .nombres {
   font-weight: bold;
   text-align: left;
@@ -510,4 +510,9 @@
   
   button:hover {
     background-color: #3F8C76;
+  }
+
+  .mensaje {
+    margin-top: 1rem;
+    text-align: center;
   }

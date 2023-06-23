@@ -316,60 +316,66 @@
             align-items: center;
             margin: auto;
         }
+/* --formulario-- */
+.form {
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+    font-weight: bold;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .select-wrapper input[type="nombre"] {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #5a5a5a;
+    margin: 0;
+  }
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    color: #5a5a5a;
+  }
+  
+  button {
+    background-color: #39A388;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3F8C76;
+  }
+  
+.mensaje {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
 
-        /* --formulario-- */ 
-        .form {
-            justify-content: center;
-            align-items: center;
-            background-color: #EFEFEF;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem;
-        }
-        
-        .form label {
-            display: block;
-            margin-bottom: 10px;
-            color: #5a5a5a;
-            font-weight: bold;
-        }
-        
-        /* Estilos para los campos de entrada */
-        .select-wrapper input[type="nombre"] {
-            background-color: #ffffff;
-            border: none;
-            border-radius: 15px;
-            padding: 10px;
-            margin-bottom: 15px;
-            width: 100%;
-            color: #5a5a5a;
-            margin: 0;
-        }
-        
-        .input-field {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #ffffff;
-            border: none;
-            border-radius: 15px;
-            color: #5a5a5a;
-        }
-        
-        button {
-            background-color: #39A388;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 15px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: #3F8C76;
-        }
-
+  
         /* Media queries (Pantallas inferiores) */
 
             @media screen and (max-width: 950px) and (min-width: 540px) {
