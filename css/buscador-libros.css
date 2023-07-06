@@ -1,0 +1,33 @@
+#searchForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 500px;
+  border-color: #39A388;
+  border-radius: 4px;
+}
+
+#searchInput::placeholder {
+  color: #999;
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+#searchForm button {
+  background-color: #39A388;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bookContainer {
+  margin-top: 20px;
+}

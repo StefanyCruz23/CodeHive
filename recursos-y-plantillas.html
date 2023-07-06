@@ -10,9 +10,11 @@
   <link href="../CodeHive/css/Texto.css" rel="stylesheet">
   <link href="../CodeHive/slider/slider.css" rel="stylesheet">
   <link href="../CodeHive/css/Style-recursos.css" rel="stylesheet">
-
+  <link href="../CodeHive/css/Style-libros.css" rel="stylesheet">
 <!--Icono-->
 <link rel="icon" href="img/Icono-CodeHive.ico"/>
+
+<script src="./js/libros.js" defer></script>
 </head>
 
 <body>
@@ -94,6 +96,8 @@
         <div class="tabla-contenido">
           <h6>Tabla de Contenido</h6>
           <ul>
+            <li><a href="#libros">Google books</a></li>
+            <li><a href="#openlibrary">OpenLibrary</a></li>
             <li><a href="#bootstrap">Bootstrap</a></li>
             <li><a href="#googlefonts">Google Fonts</a></li>
             <li><a href="#codepen">CodePen</a></li>
@@ -107,6 +111,43 @@
           </ul>
         </div>
         <div class="contenido">
+          <h5 id="libros"><a href="https://books.google.es/" target="_blank">Google books</a></h5>
+          <p>Google Books es una herramienta en línea proporcionada por Google que permite a los usuarios buscar, explorar y acceder a una amplia variedad de libros digitales y contenidos relacionados. Con la capacidad de realizar búsquedas de texto completo y acceder a fragmentos, índices y vistas previas de páginas, Google Books facilita la localización de información relevante en el contexto de libros digitalizados de diversas fuentes, como editoriales y bibliotecas.</p>
+          <!--destacados-->
+
+    <article class="card">
+      <div class="container-margen">
+        <div class="container-libros">
+          <div class="grid-seccion3">
+            <template id="book-template">
+              <div class="grid-item">
+                <div class="img-recursos">
+                  <a class="libro-link" target="_blank">
+                    <img class="img-recursos-img" alt="Portada del libro">
+                  </a>
+                </div>
+                <div class="texto-recursos">
+                  <h5 class="titulo"></h5>
+                  <h6 class="autor"></h6>
+                  <p class="isbn"></p>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+          <div class="link">
+            <a href="https://books.google.es/" target="_blank">Visitar página ></a>
+          </div>
+
+          <h5 id="openlibrary"><a href="./buscador-libros.html" target="_blank">OpenLibrary</a></h5>
+          <p>Open Library es una plataforma en línea que ofrece acceso gratuito a una amplia colección de libros digitales, incluyendo obras de dominio público y con derechos de autor. Los usuarios pueden buscar, leer y descargar libros, y también contribuir agregando nuevos títulos y mejorando la información existente. Es una comunidad activa y en constante crecimiento.</p>
+          <div class="link">
+            <a href="./buscador-libros.html" target="_blank">Visitar página ></a>
+          </div>
+
           <h5 id="bootstrap"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></h5>
           <p>Bootstrap es un framework frontend ampliamente utilizado que ofrece una amplia gama de componentes y estilos predefinidos para crear interfaces responsivas y modernas. Con Bootstrap, puedes acelerar el desarrollo de tu proyecto al aprovechar su estructura CSS y sus componentes listos para usar. Además, es altamente personalizable y cuenta con una gran comunidad de soporte.</p>
           <div class="link">
