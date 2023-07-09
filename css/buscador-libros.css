@@ -1,33 +1,79 @@
+/*---------------- GENERAL ---------------- */ 
+
+    /* Reseteo */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
 #searchForm {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
-#searchInput {
-  padding: 10px;
-  width: 500px;
-  border-color: #39A388;
-  border-radius: 4px;
-}
+  #searchInput {
+    padding: 10px;
+    width: 900px;
+    border-color: #d1d0cf;
+    border-radius: 5px; 
+    margin-right: 25px;
+  }
+  
+  #searchInput::placeholder {
+    color: #999;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+  }
+  
+  #searchForm button {
+    background-color: #39A388;
+    color: #fff;
+    border: 5px solid 
+    padding 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; 
+  }
 
-#searchInput::placeholder {
-  color: #999;
-}
+  .book {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #efefef;
+    border: solid #39A388;
+    font-size: 25px;
+    border-radius: 15px;
+   
+  }
 
-#searchInput:focus {
-  outline: none;
-}
+  .book button {
+    background-color:#39A388; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+ 
+  .book h3{
+    color: #39A388;
+    font-family: 'Montserrat'; 
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+  }
 
-#searchForm button {
-  background-color: #39A388;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  .book p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
 
-#bookContainer {
-  margin-top: 20px;
-}
+  .book p::first-letter {
+    font-weight: bold;
+  }
+
